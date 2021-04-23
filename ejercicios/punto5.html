@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto 5</title>
+    <style>
+        .btn-volver{
+            height: 40px;
+        }
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .contenedor input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .contenedor button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-volver">
+        <a href="../index.html">Volver</a>
+    </div>
+    <div class="contenedor">
+        <input type="number" id="numero">
+        <button onclick="mostrarNumero();" id="boton1">Mostrar número</button>
+        <button onclick="mostrarDobleNumero();" id="boton2">Mostrar el doble</button>
+    </div>
+
+    <script>
+        const numero = document.getElementById("numero");
+
+        function mostrarNumero(){
+            console.log(`El número ingresado es: ${numero.value}.`);
+        }
+
+        function mostrarDobleNumero(){
+            console.log(`El doble del número ingresado es: ${numero.value *2}.`);
+        }
+
+    </script>
+</body>
+
+</html>

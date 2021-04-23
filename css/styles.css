@@ -1,0 +1,34 @@
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #797878;
+    font-style: italic;
+    font-weight: 700;
+}
+.lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0;
+}
+.lista li{
+    padding: 10px 0;
+}
+li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+li a:hover{
+    color: red;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto 4</title>
+    <style>
+        .btn-volver{
+            height: 40px;
+        }
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .contenedor button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-volver">
+        <a href="../index.html">Volver</a>
+    </div>
+    <div class="contenedor">
+        <button onclick="mostrarBoton1();" id="boton1">Botón 1</button>
+        <button onclick="mostrarBoton2();" id="boton2">Botón 2</button>
+    </div>
+
+    <script>
+        const boton1 = document.getElementById("boton1").textContent;
+        const boton2 = document.getElementById("boton2").textContent;
+
+        function mostrarBoton1(){
+            console.log(`Se presionó el boton: ${boton1}.`);
+        }
+
+        function mostrarBoton2(){
+            console.log(`Se presionó el boton: ${boton2}.`);
+        }
+
+    </script>
+</body>
+
+</html>

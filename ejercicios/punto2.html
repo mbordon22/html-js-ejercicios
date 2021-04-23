@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto 2</title>
+    <style>
+        .btn-volver{
+            height: 40px;
+        }
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .contenedor input{
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-volver">
+        <a href="../index.html">Volver</a>
+    </div>
+    <div class="contenedor">
+        <input type="text" id="texto">
+        <button onclick="mostrarEnConsola();">Mostrar Texto</button>
+    </div>
+    
+    <script>
+        const texto = document.getElementById("texto");
+        function mostrarEnConsola(){
+            console.log(texto.value);
+        }
+    </script>
+</body>
+</html>
